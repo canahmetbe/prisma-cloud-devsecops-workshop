@@ -1,16 +1,8 @@
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "6.0.0-beta3"
-    }
-  }
-}
-
 provider "aws" {
   region = "us-west-2"
 }
-
+AWS_SECRET_KEY_ID=AKIAURLTMUOKZUPIDCGD
+AWS_SECRET_ACCESS_KEY=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
 resource "aws_s3_bucket" "dev_s3" {
   bucket_prefix = "dev-"
 
